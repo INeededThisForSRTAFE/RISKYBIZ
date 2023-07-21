@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hologram Generator</title>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			// should the user agent contain iphone, android or kfapwi
+			// the html tag will gain the class "isMobile".
+			let agent = navigator.userAgent.toLocaleLowerCase();
+			if (agent.includes("iphone") || agent.includes("android") || agent.includes("kfapwi")) {
+				document.getElementsByTagName("html")[0].classList.add("isMobile");
+			}
+		</script>
+	</head>
+	<body>
+		<div style="flex: 1 0 auto">
+			<div class="header">
+				<div class="flexContainer">
+					<h1 style="margin-block-end:0">Hologram Generator</h1>
+					<h3 style="font-size:smaller;margin-block-start:0;font-weight:400">by Risky Bizness</h3>
+				</div>
+			</div>
+			<div id="buybox" class="flexContainer flexCenter">
+				<div class="paddingContainer container" style="background:url('holoproj.jpg') no-repeat center/cover">
+					<div class="inner flexCenter flexContainer" style="gap:3em;justify-content:center;padding:1em;background:#fff6;backdrop-filter:blur(0.25em)">
+						<div class="flexCenter flexContainer">
+							<h3 style="margin-block:0.5em 1.5em;color:var(--aqua);text-shadow:0 0 0.125em var(--blue),0 0 0.375em var(--blue);text-align:center">This Amazing Machine Can Create Hyper-Realistic Holograms!</h3>
+							<h4 style="align-self:flex-start;margin:0;color:var(--black);font-weight:400">It is perfect for people who want to create realistic images or illusions of items.</h4>
+							<h4 style="align-self:flex-start;margin:0;color:var(--black);font-weight:400">The Hologram Projector uses a special laser to project images into the air. The images can be of anything, from people and objects to entire landscapes.</h4>
+							<em style="padding-top:2em;color:var(--black);font-size:smaller"><strong>Disclaimer:</strong> In creating the hologram, it destroys the original item.</em>
+						</div>
+						<div class="flexContainer flexCenter">
+							<p><strong>Now only $49.99!</strong></p>
+							<button class="buyButton">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="reviews" class="col2 reviews">
+				<div class="review">
+					<div class="flexContainer">
+						<div style="display:flex;align-items:center;gap:1em;margin-bottom:0.5em">
+							<img src="buswoman.png" height="60" width="60" class="avatar">
+							<span class="name">Mary S.</span>
+							<div class="rating" title="4.5/5 stars">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_half.svg">
+							</div>
+						</div>
+						<div class="reviewMessage">This wonderful item has caused us a world of good! We've been able to project our most prized possessions to whomever enters our humble abode. My husband is fond of it too and has projected a "Best Dad" mug from one of the kids.</div>
+					</div>
+				</div>
+				<div class="review">
+					<div class="flexContainer">
+						<div style="display:flex;align-items:center;gap:1em;margin-bottom:0.5em">
+							<img src="lechat.png" height="60" width="60" class="avatar">
+							<span class="name">Frank Green</span>
+							<div class="rating" title="2.5/5 stars">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_half.svg">
+								<img src="Star_empty.svg">
+								<img src="Star_empty.svg">
+							</div>
+						</div>
+						<div class="reviewMessage">This item worked but didn't live up to the hype.</div>
+					</div>
+				</div>
+				<div class="review">
+					<div class="flexContainer">
+						<div style="display:flex;align-items:center;gap:1em;margin-bottom:0.5em">
+							<img src="hackerman.png" height="60" width="60" class="avatar">
+							<span class="name">Mark H.</span>
+							<div class="rating" title="4/5 stars">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_full.svg">
+								<img src="Star_empty.svg">
+							</div>
+						</div>
+						<div class="reviewMessage">I'm gonna steal your stuff!</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="sources">
+			<p><strong>Image Sources:</strong></p>
+			<p>Hologram Generator: <a href="https://en.futuroprossimo.it/2020/05/quanto-siamo-vicini-alla-vera-tecnologia-olografica-3d/">here</a>, licensed under CC BY 4.0.</p>
+			<p>Business Woman: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=185581&picture=young-business-woman">here</a>, licensed under CC0 Public Domain.</p>
+			<p>Cat: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=170547&picture=">here</a>, licensed under CC0 Public Domain.</p>
+			<p>Hacker: <a href="https://www.flickr.com/photos/devdsp/6999839463">here</a>, licensed under CC BY 2.0.</p>
+			<p>Star full: <a href="https://commons.wikimedia.org/wiki/File:Star_full.svg">here</a>, Public Domain.</p>
+			<p>Star half: <a href="https://commons.wikimedia.org/wiki/File:Star_half.svg">here</a>, Public Domain.</p>
+			<p>Star empty: <a href="https://commons.wikimedia.org/wiki/File:Star_empty.svg">here</a>, Public Domain.</p>
+		</footer>
+	</body>
+</html>
