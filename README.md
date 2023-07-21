@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This is an assignment done for TAFE, requiring me to host and test a website containing a form. It's required to be hosted on "an external webhost".
+This is an assignment done for TAFE, requiring me to host a website. It's required to be hosted on "an external webhost".
 
 So, I've gone with GitHub Pages.
 
